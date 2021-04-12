@@ -14,7 +14,7 @@
 <body>
 <header class="header">
     <div class="container">
-        <nav>
+        <nav class="navigation">
             <a class="logo" href="./index.html">Web<span class="header-logo">Studio</span></a>
             <ul class="nav-links list">
                 <li class="link-item"><a href="./index.html" class="link current">Студия</a></li>
@@ -48,6 +48,15 @@
         <div class="container">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <button class="button">Заказать услугу</button>
+        <div class="backdrop is-hidden">
+            <div class="modal">
+                <button>
+                    <svg class="icon-close">
+                        <use href="./"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
     </div>
     </section>
     <section class="section features">
@@ -99,12 +108,15 @@
         <ul class="directions-list list">
             <li class="list-item">
                 <img src="./images/what-do-we-do/img1.jpg" width="370" alt="Разработчик пишуший код на клавиатуре">
+                <p class="directions-desc">Десктопные приложения</p>
             </li>
             <li class="list-item">
                 <img src="./images/what-do-we-do/img2.jpg" width="370" alt="Разработчик работает над созданием мобильного приложения">
+                <p class="directions-desc">Мобильные приложения</p>
             </li>
             <li class="list-item">
                 <img src="./images/what-do-we-do/img3.jpg" width="370" alt="Разработчик выбирает цвет из палитры на экране планшета">
+                <p class="directions-desc">Дизайнерские решения</p>
             </li>
         </ul>
     </div>
@@ -362,5 +374,6 @@
         </div>
     </div>
 </footer>
+<script src="./js/modal.js"></script>
 </body>
 </html>   
